@@ -44,4 +44,15 @@ nav a {
    width: 100%;
  }
 
+ footer {
+   background-color: rgb(36, 49, 49);
+   display: flex;
+   min-height: 200px;
+   color: whitesmoke;
+ }
+ footer div {
+   border: 0.5px solid white;
+   border-radius: 10%;
+   }
+
 
