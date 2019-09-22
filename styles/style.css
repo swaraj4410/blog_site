@@ -13,9 +13,7 @@ Global reset  will be here
    [class*="zocial-"]:before {
     font-family: 'zocial', sans-serif;
   }
-h1 {
-  color: #ff4500;
-}
+
   /* navigation bar decoration */
 nav  {
   display: flex;
@@ -23,18 +21,27 @@ nav  {
   text-transform: uppercase;
   width: 60%;
 }
+.container span {
+  width: 20%;
+  position: relative;
+}
  
 nav a {
   margin: 0px 15px;
   color:  rgb(153, 207, 44);
+  position: absolute;
+  bottom: 0px;
+  right: 2px;
+  text-align: center;
 }
  nav a:hover {
   color: green;
  }
 
  .jumbotron {
-   background-image: url('images/jumbotron.jpg');
+   background-image: url('images/s.jpeg');
    opacity: 0.8;
+   width: 100%;
  }
 
 
