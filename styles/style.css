@@ -17,12 +17,13 @@ Global reset  will be here
   /* navigation bar decoration */
 nav  {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   text-transform: uppercase;
-  width: 60%;
+  margin: 0px 0px;
+  text-align: right;
 }
-.container span {
-  width: 20%;
+nav.container span {
+  width: 15%;
   position: relative;
 }
  
@@ -39,20 +40,66 @@ nav a {
  }
 
  .jumbotron {
-   background-image: url('images/s.jpeg');
+   background-image: url('images/s.jpg');
+   background-position: center;
    opacity: 0.8;
    width: 100%;
  }
+h2 {
+  text-align: center;
+  color: coral;
+}
+ /* main content */
+main {
+  margin: 30px 20px;
+}
 
+ /* section starts here  */
+ section {
+   background-color: #ffffcc;
+   justify-content: center;
+   margin: 5px auto;                                                              
+ }
+
+ section .block {
+  min-width: 40%;
+ }
+
+ section.input-blog {
+   
+   
+ }
+
+
+.block {
+  width: 40%;
+  height: 80px;
+  border : .2px solid black;
+  padding: 10px;
+  border-radius: 3%;
+}
+ /* section ends here */
  footer {
    background-color: rgb(36, 49, 49);
    display: flex;
-   min-height: 200px;
+   flex-wrap: nowrap;
+   min-height: 100px;
    color: whitesmoke;
+   overflow: hidden;
  }
- footer div {
+ footer div.footer-block {
    border: 0.5px solid white;
-   border-radius: 10%;
+   border-radius: 7%;
+   margin: 10px 10px;
+   min-width: calc((100% - 120px)/3);
    }
 
-
+/* responsive design */
+@media screen and (max-width: 500px) {
+footer {
+  flex-wrap: wrap;
+}
+footer div {
+max-width: 90%;
+}
+}

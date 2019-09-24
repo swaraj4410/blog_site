@@ -21,20 +21,49 @@
   </header>
   <div class="container-fluid">
     <div class="jumbotron">
-      <h1>WELCOME TO SWARAJ SINGH DHAMI BLOG SITE</h1>
+      <h1>A Writer's Paradise</h1>
     </div>
-
   </div>
+  <h2> write your own blog</h2>
+
+
+  <section class="write-blog">
+    <p>write your blog here</p>
+    <input type="text" value="type text-here">
+    <button class="blog-submit-button">submit</button>
+    <button class="blog-delete-button">deletr last blog</button>
+  </section>
+
+  <section class="blog">
+    <div class="container main-content">
+    <div class="block">hello</div>
+    <div class="block">sample content</div>
+    <div class="block">try it out</div>
+  </div>
+</section>
+
+  <!-- footer starts here -->
 
 <footer class="container-fluid">
-<div class="col-sm-4">about us</div>
-<div class="col-sm-4">contact us</div>
-<div class="col-sm-4">support us</div>
+<div class="footer-block">about us</div>
+<div class="footer-block">contact us</div>
+<div class="footer-block">support us</div>
 </footer>
 
 
 
   <script src="js/jQuery.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+  
+  $('.blog-submit-button').click(function() {
+   var str = $('input').val();
+   $('.blog').children('.main-content').append("<div class=\"block col-sm-3\">"+str+"</div>");
+  });
+  $('.blog-delete-button').click(function() {
+    $('.main-content').children().last().remove();
+  })
+  </script>
 </body>
 </html>
